@@ -6,10 +6,10 @@ import retrofit2.http.Query
 
 interface NewsAPI {
 
-    @GET("top-headlines")
+    @GET("top-headlines?sources=techcrunch")
     suspend fun getNewsList(
-        @Query("sources") sources: String,
         @Query("apiKey") apiKey: String,
 
     ) : NewsList
+
 }

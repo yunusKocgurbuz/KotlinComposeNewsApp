@@ -1,4 +1,4 @@
-package com.yunuskocgurbuz.jetpackcomposenewsapp
+package com.yunuskocgurbuz.jetpackcomposenewsapp.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
                         NewsListScreen(navController = navController)
                     }
 
-                    composable("news_detail_screen/{author/{title}/{description}/{url}/{urlToImage}/{publishedAt}/{content}", arguments = listOf(
+                    composable("news_detail_screen/{author}/{title}/{description}/{url}/{urlToImage}/{publishedAt}/{content}", arguments = listOf(
                         navArgument("author"){
                             type = NavType.StringType
                         },

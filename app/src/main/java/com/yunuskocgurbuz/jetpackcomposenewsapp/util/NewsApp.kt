@@ -1,4 +1,4 @@
-package com.yunuskocgurbuz.jetpackcomposenewsapp
+package com.yunuskocgurbuz.jetpackcomposenewsapp.util
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
